@@ -14,6 +14,12 @@ Vector::Vector(const std::vector<double>& values)
 Vector Vector::Add(const Vector& other) const
 {
     std::vector<double> result;
+    // Size check
+    if (data.size() != other.data.size())
+    {
+        std::cout << "Error: vectors must be the same size." << std::endl;
+        return Vector({});
+    }
 
     // Go through each position in the vector
     for (size_t i = 0; i < data.size(); i++)
