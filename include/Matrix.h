@@ -3,22 +3,27 @@
 #include <vector>
 
 // Matrix class skeleton.
-// This will store matrix data and later handle matrix operations.
+// This class will store matrix size and matrix values.
 class Matrix
 {
 public:
-    // Temporary default constructor.
-    // This lets us create a Matrix object without errors for now.
-    Matrix() = default;
+    // Default constructor.
+    // Creates an empty matrix.
+    Matrix();
+
+    // Constructor that creates a matrix with rows and columns.
+    Matrix(int rows, int columns);
+
+    // Prints the matrix to the console.
+    void Print() const;
 
 private:
     // Number of rows in the matrix.
-    int rowCount = 0;
+    int rowCount;
 
     // Number of columns in the matrix.
-    int columnCount = 0;
+    int columnCount;
 
-    // Stores all matrix values.
-    // Later, we will decide how to organize/index these values.
+    // Stores matrix values in one long list.
     std::vector<double> values;
 };
