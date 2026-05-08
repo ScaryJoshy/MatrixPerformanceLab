@@ -3,7 +3,7 @@
 #include <iostream>
 
 // Default constructor.
-// Starts with an empty matrix.
+// Creates an empty matrix.
 Matrix::Matrix()
     : rowCount(0), columnCount(0), values()
 {
