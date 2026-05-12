@@ -16,6 +16,8 @@ public:
 
     // Prints the matrix to the console.
     void Print() const;
+    // Changes one value inside the matrix.
+    void SetValue(int row, int column, double value); 
 
 private:
     // Number of rows in the matrix.

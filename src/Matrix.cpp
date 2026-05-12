@@ -32,3 +32,10 @@ void Matrix::Print() const
         std::cout << std::endl;
     }
 }
+
+// Changes one value inside the matrix.
+void Matrix::SetValue(int row, int column, double value)
+{
+    int index = row * columnCount + column;
+    values[index] = value;
+}
