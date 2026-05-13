@@ -26,3 +26,15 @@ Tomorrow's tasks:
 
 Stretch goal:
 Add matrix addition or transpose if time allows.
+
+Today I continued building the Matrix portion of the Matrix Performance Lab.
+
+Progress made:
+- Added Matrix class testing in `main.cpp`
+- Worked on connecting `Matrix.h`, `Matrix.cpp`, and `main.cpp`
+- Learned the difference between compiler errors and linker errors
+- Learned that Visual Studio must include `.cpp` files in the project build
+- Practiced using Git status, add, commit, and push from Developer PowerShell
+
+Current focus:
+Continue improving the Matrix class and make sure the project builds cleanly before adding more matrix operations.
